@@ -5,4 +5,4 @@ Add links to github and linkedIn profiles
     https://nsandler1.github.io/
 
 ## Terpconnect:
-    https://terpconnect.umd.edu/nsandler/nsandler1.github.io/
+    https://terpconnect.umd.edu/~nsandler/nsandler1.github.io/
