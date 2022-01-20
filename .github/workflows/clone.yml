@@ -16,4 +16,4 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd ~/../pub
-            git clone https://github.com/nsandler1/nsandler1.github.io.git
+            git clone git@github.com:nsandler1/nsandler1.github.io.git
