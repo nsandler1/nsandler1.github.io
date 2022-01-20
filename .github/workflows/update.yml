@@ -1,11 +1,11 @@
-name: clone workflow
-
+name: update workflow
 on:
- workflow_dispatch:
+  push:
+    branches: [main]
 jobs:
   job_one:
-    name: Clone
-    runs-on: ubuntu-latest
+    name: update
+    runs-on: Ubuntu-latest
     steps:
       - name: testing
         uses: appleboy/ssh-action@master
@@ -16,4 +16,4 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd ~/../
-            git clone https://github.com/nsandler1/nsandler1.github.io.git
+            git pull
