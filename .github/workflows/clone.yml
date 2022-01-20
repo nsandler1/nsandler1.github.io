@@ -8,11 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: testing
-        uses: appleboy/ssh-actions@main
+        uses: actions/checkout@v2
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            git clone
+            cd pub
+            git clone https://github.com/nsandler1/nsandler1.github.io.git
